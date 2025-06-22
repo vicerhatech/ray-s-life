@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documents Page</title>
+  </head>
+  <body>
+    <!-- Banner Header -->
+    <header class="banner">
+      <h1>Ray's Life</h1>
+      <p>Capturing moments, sharing stories</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-tab active" data-page="home">Home</a>
+        <a href="./pages/videos.html" class="nav-tab" data-page="videos"
+          >Videos</a
+        >
+        <a href="#" class="nav-tab" data-page="images">Images</a>
+        <a href="#" class="nav-tab" data-page="documents">Text Documents</a>
+      </div>
+    </nav>
+
+    <!-- Mobile Sidebar Toggle -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <main class="main-content">
+      <section id="documents" class="page-section">
+        <h2 class="section-title">Text Documents</h2>
+        <div class="upload-grid">
+          <div class="upload-item">
+            <h3>📝 Travel Journal - Europe 2024</h3>
+            <p>
+              Complete travel guide including itineraries, budget breakdown,
+              restaurant recommendations, and cultural insights from my European
+              adventure.
+            </p>
+            <div class="upload-date">3 days ago</div>
+            <button class="download-btn" style="margin-top: 1rem">
+              Download PDF
+            </button>
+          </div>
+          <div class="upload-item">
+            <h3>📋 Photography Tips & Techniques</h3>
+            <p>
+              Comprehensive guide covering composition rules, lighting
+              techniques, camera settings, and post-processing tips for aspiring
+              photographers.
+            </p>
+            <div class="upload-date">1 week ago</div>
+            <button class="download-btn" style="margin-top: 1rem">
+              Download PDF
+            </button>
+          </div>
+          <div class="upload-item">
+            <h3>🍳 Recipe Collection</h3>
+            <p>
+              Curated collection of favorite recipes from around the world,
+              including step-by-step instructions and ingredient substitutions.
+            </p>
+            <div class="upload-date">2 weeks ago</div>
+            <button class="download-btn" style="margin-top: 1rem">
+              Download PDF
+            </button>
+          </div>
+          <div class="upload-item">
+            <h3>📚 Book Recommendations 2024</h3>
+            <p>
+              Personal reading list with reviews and ratings of the best books
+              I've read this year across various genres and topics.
+            </p>
+            <div class="upload-date">3 weeks ago</div>
+            <button class="download-btn" style="margin-top: 1rem">
+              Download PDF
+            </button>
+          </div>
+          <div class="upload-item">
+            <h3>🎯 Productivity Handbook</h3>
+            <p>
+              Personal productivity system including time management techniques,
+              goal setting frameworks, and habit-building strategies.
+            </p>
+            <div class="upload-date">1 month ago</div>
+            <button class="download-btn" style="margin-top: 1rem">
+              Download PDF
+            </button>
+          </div>
+          <div class="upload-item">
+            <h3>🌍 Sustainable Living Guide</h3>
+            <p>
+              Practical tips and strategies for reducing environmental impact
+              through everyday choices and lifestyle adjustments.
+            </p>
+            <div class="upload-date">1 month ago</div>
+            <button class="download-btn" style="margin-top: 1rem">
+              Download PDF
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../javascript/index.js"></script>
+  </body>
+</html>

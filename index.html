@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's Life</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Banner Header -->
+    <header class="banner">
+        <h1>Ray's Life</h1>
+        <p>Capturing moments, sharing stories</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-tab active" data-page="home">Home</a>
+            <a href="./pages/videos.html" class="nav-tab" data-page="videos">Videos</a>
+            <a href="./pages/images.html" class="nav-tab" data-page="images">Images</a>
+            <a href="./pages/documents.html" class="nav-tab" data-page="documents">Text Documents</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Toggle -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Page -->
+            <section id="home" class="page-section active">
+                <!-- Recent Uploads -->
+                <div class="recent-uploads">
+                    <h2 class="section-title">Recent Uploads</h2>
+                    <div class="upload-grid">
+                        <div class="upload-item">
+                            <h3>Beach Sunset Timelapse</h3>
+                            <p>A beautiful 4K timelapse of the sunset at Malibu Beach, captured during golden hour with stunning color transitions.</p>
+                            <div class="upload-date">2 hours ago</div>
+                        </div>
+                        <div class="upload-item">
+                            <h3>City Life Photography</h3>
+                            <p>Street photography collection showcasing the vibrant urban culture and daily life in downtown Los Angeles.</p>
+                            <div class="upload-date">5 hours ago</div>
+                        </div>
+                        <div class="upload-item">
+                            <h3>Travel Journal - Europe</h3>
+                            <p>Complete travel documentation of my 2-week European adventure including itineraries, tips, and memorable experiences.</p>
+                            <div class="upload-date">1 day ago</div>
+                        </div>
+                        <div class="upload-item">
+                            <h3>Cooking Tutorial: Pasta</h3>
+                            <p>Step-by-step video guide on making authentic Italian carbonara from scratch using traditional techniques.</p>
+                            <div class="upload-date">2 days ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slideshow -->
+                <div class="slideshow-container">
+                    <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="slide-content">
+                            <h3>Welcome to Ray's Life</h3>
+                            <p>Discover amazing content, stories, and experiences shared through videos, images, and documents.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                        <div class="slide-content">
+                            <h3>Latest Video Content</h3>
+                            <p>Check out the newest video uploads featuring travel vlogs, tutorials, and lifestyle content.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="slide-content">
+                            <h3>Photo Gallery</h3>
+                            <p>Explore stunning photography collections from around the world, capturing life's beautiful moments.</p>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1)">❮</a>
+                    <a class="next" onclick="changeSlide(1)">❯</a>
+                    <div class="dots-container">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </section>
+  
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="ad-section">
+                <h3 class="section-title" style="font-size: 1.5rem;">Sponsored</h3>
+                <div class="ad-item">
+                    <h4>📸 Pro Camera Gear</h4>
+                    <p>Upgrade your photography with professional equipment. Special discount for Ray's Life viewers!</p>
+                </div>
+                <div class="ad-item">
+                    <h4>✈️ Travel Deals</h4>
+                    <p>Discover amazing destinations with exclusive travel packages. Book your next adventure today!</p>
+                </div>
+                <div class="ad-item">
+                    <h4>📱 Creative Apps</h4>
+                    <p>Transform your content with premium editing tools. Download the creative suite now!</p>
+                </div>
+            </div>
+
+            <div class="ad-section">
+                <h3 class="section-title" style="font-size: 1.5rem;">Quick Links</h3>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <a href="#" style="color: #667eea; text-decoration: none; padding: 0.5rem; border-radius: 8px; transition: all 0.3s ease;" onmouseover="this.style.background='#f8f9ff'" onmouseout="this.style.background='transparent'">📧 Contact</a>
+                    <a href="#" style="color: #667eea; text-decoration: none; padding: 0.5rem; border-radius: 8px; transition: all 0.3s ease;" onmouseover="this.style.background='#f8f9ff'" onmouseout="this.style.background='transparent'">ℹ️ About</a>
+                    <a href="#" style="color: #667eea; text-decoration: none; padding: 0.5rem; border-radius: 8px; transition: all 0.3s ease;" onmouseover="this.style.background='#f8f9ff'" onmouseout="this.style.background='transparent'">🔔 Subscribe</a>
+                    <a href="#" style="color: #667eea; text-decoration: none; padding: 0.5rem; border-radius: 8px; transition: all 0.3s ease;" onmouseover="this.style.background='#f8f9ff'" onmouseout="this.style.background='transparent'">💬 Feedback</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>
